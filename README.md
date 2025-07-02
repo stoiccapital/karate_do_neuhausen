@@ -5,7 +5,7 @@ A responsive, minimalistic website for Karate-Do Neuhausen e.V., a Shotokan Kara
 ## Features
 
 - Responsive design that works on all devices
-- Clean, minimalistic interface using only black, white, and gray tones
+- Clean, minimalistic interface using only black and white 
 - Mobile-first approach
 - No JavaScript dependencies
 - Fast loading and optimized for performance
