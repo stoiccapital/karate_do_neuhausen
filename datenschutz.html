@@ -4,118 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datenschutz - Karate-Do Neuhausen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components/styles/main.css">
+  <link rel="stylesheet" href="components/styles/pages/datenschutz.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-inner">
-      <span class="nav-logo"><a href="index.html" style="color:inherit;text-decoration:none;">Karate-Do Neuhausen</a></span>
-      <ul class="nav-links">
-        <li><a href="training.html">Training</a></li>
-        <li><a href="about.html">Über Uns</a></li>
-      </ul>
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo">Karate-Do Neuhausen</a>
+      </div>
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="training.html" class="nav-link">Training</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Über Uns</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-toggle" id="navbar-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
     </div>
   </nav>
 
-  <main class="container" style="padding: 2rem 0;">
-    <h1>Datenschutzerklärung</h1>
-    
-    <div class="datenschutz-content" style="max-width: 800px; margin: 0 auto;">
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>1. Verantwortlicher</h2>
-        <p>Karate Do Neuhausen e.V.<br>
-        Winthirpl. 6<br>
-        80639 München<br>
-        Deutschland</p>
-        <p>Vertreten durch: Pero Lazic<br>
-        Telefon: <a href="tel:+491791226471">+49 179 1226471</a></p>
-      </section>
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">Datenschutzerklärung</h1>
+      <p class="hero-subtitle">Informationen zum Schutz Ihrer persönlichen Daten</p>
+    </div>
+  </header>
 
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>
-        <p>Bei Ihrem Besuch auf unserer Website werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) umfassen etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers und Ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen.</p>
-      </section>
+  <main>
+    <div class="container mt-3 mb-3">
+      <div class="datenschutz-content">
+        <section class="datenschutz-section">
+          <h2>1. Verantwortlicher</h2>
+          <p>Karate Do Neuhausen e.V.<br>
+          Winthirpl. 6<br>
+          80639 München<br>
+          Deutschland</p>
+          <p>Vertreten durch: Pero Lazic<br>
+          Telefon: <a href="tel:+491791226471">+49 179 1226471</a></p>
+        </section>
 
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>3. Cookies</h2>
-        <p>Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Cookies helfen uns dabei, unsere Website benutzerfreundlicher, effektiver und sicherer zu machen.</p>
-        <p>Sie können die Verwendung von Cookies in Ihren Browser-Einstellungen jederzeit deaktivieren oder einschränken. Bitte beachten Sie, dass die Deaktivierung von Cookies die Funktionalität unserer Website beeinträchtigen kann.</p>
-      </section>
+        <section class="datenschutz-section">
+          <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>
+          <p>Bei Ihrem Besuch auf unserer Website werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) umfassen etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers und Ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen.</p>
+        </section>
 
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>4. Google Maps</h2>
-        <p>Unsere Website verwendet Google Maps zur Darstellung von Karten. Google Maps ist ein Dienst von Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
-        <p>Durch die Nutzung von Google Maps werden Informationen über die Nutzung unserer Website an Google übertragen. Weitere Informationen finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-      </section>
+        <section class="datenschutz-section">
+          <h2>3. Cookies</h2>
+          <p>Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Cookies helfen uns dabei, unsere Website benutzerfreundlicher, effektiver und sicherer zu machen.</p>
+          <p>Sie können die Verwendung von Cookies in Ihren Browser-Einstellungen jederzeit deaktivieren oder einschränken. Bitte beachten Sie, dass die Deaktivierung von Cookies die Funktionalität unserer Website beeinträchtigen kann.</p>
+        </section>
 
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>5. Ihre Rechte</h2>
-        <p>Sie haben das Recht:</p>
-        <ul>
-          <li>Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten</li>
-          <li>Die Berichtigung unrichtiger Daten zu verlangen</li>
-          <li>Die Löschung Ihrer Daten zu verlangen</li>
-          <li>Die Einschränkung der Verarbeitung zu verlangen</li>
-          <li>Der Verarbeitung zu widersprechen</li>
-          <li>Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten</li>
-        </ul>
-      </section>
+        <section class="datenschutz-section">
+          <h2>4. Google Maps</h2>
+          <p>Unsere Website verwendet Google Maps zur Darstellung von Karten. Google Maps ist ein Dienst von Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
+          <p>Durch die Nutzung von Google Maps werden Informationen über die Nutzung unserer Website an Google übertragen. Weitere Informationen finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+        </section>
 
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>6. Kontakt</h2>
-        <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten wenden Sie sich bitte an:</p>
-        <p>Pero Lazic<br>
-        Telefon: <a href="tel:+491791226471">+49 179 1226471</a></p>
-      </section>
+        <section class="datenschutz-section">
+          <h2>5. Ihre Rechte</h2>
+          <p>Sie haben das Recht:</p>
+          <ul>
+            <li>Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten</li>
+            <li>Die Berichtigung unrichtiger Daten zu verlangen</li>
+            <li>Die Löschung Ihrer Daten zu verlangen</li>
+            <li>Die Einschränkung der Verarbeitung zu verlangen</li>
+            <li>Der Verarbeitung zu widersprechen</li>
+            <li>Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten</li>
+          </ul>
+        </section>
 
-      <section class="datenschutz-section" style="margin-bottom: 2rem;">
-        <h2>7. Änderungen dieser Datenschutzerklärung</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services.</p>
-        <p>Stand: Dezember 2024</p>
-      </section>
+        <section class="datenschutz-section">
+          <h2>6. Kontakt</h2>
+          <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten wenden Sie sich bitte an:</p>
+          <p>Pero Lazic<br>
+          Telefon: <a href="tel:+491791226471">+49 179 1226471</a></p>
+        </section>
+
+        <section class="datenschutz-section">
+          <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+          <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services.</p>
+          <p class="last-updated">Stand: Dezember 2024</p>
+        </section>
+      </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-flex">
-      <div class="footer-left">
-        <div class="footer-contact">
-          <h2>Kontakt</h2>
-          <p>Pero Lazic</p>
-          <p>Telefon: <a href="tel:+491791226471">+49 179 1226471</a></p>
-        </div>
-        <div class="footer-meta">
-          <a href="impressum.html" class="footer-link">Impressum</a>
-          <a href="datenschutz.html" class="footer-link">Datenschutz</a>
-        </div>
-      </div>
-      <div class="footer-center">
-        <div class="footer-location">
-          <h2>Ort</h2>
-          <p>Winthirplatz 6</p>
-          <p>80639 München</p>
-        </div>
-      </div>
-      <div class="footer-right">
-        <div class="footer-map">
-          <iframe src="https://www.google.com/maps?q=Winthirplatz+6,+80639+München&output=embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
 
-  <!-- Cookie Consent Banner -->
-  <div id="cookie-banner" class="cookie-banner" style="display: none;">
-    <div class="cookie-content">
-      <p>Diese Website verwendet Cookies, um Ihnen das beste Nutzererlebnis zu bieten. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu.</p>
-      <div class="cookie-buttons">
-        <button id="accept-cookies" class="btn btn-primary">Akzeptieren</button>
-        <button id="reject-cookies" class="btn btn-secondary">Ablehnen</button>
-      </div>
-    </div>
-  </div>
+  <script>
+    fetch('components/footer/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      });
+  </script>
 
+  <script src="components/navbar/navbar.js"></script>
   <script src="cookies.js"></script>
 </body>
 </html> 

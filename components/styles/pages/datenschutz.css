@@ -1,0 +1,360 @@
+/* Custom styles for datenschutz.html */
+
+/* Hero Section Enhancements */
+.hero {
+  background: linear-gradient(135deg, #fff 70%, #f5f5f5 100%);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+}
+
+.hero .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #444;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main Content Improvements */
+main {
+  line-height: 1.7;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Datenschutz Content - Enhanced */
+.datenschutz-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Datenschutz Sections */
+.datenschutz-section {
+  background: linear-gradient(145deg, #fafafa, #f5f5f5);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.datenschutz-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e74c3c, #f39c12);
+}
+
+.datenschutz-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.datenschutz-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+}
+
+.datenschutz-section p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.datenschutz-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* List Styling */
+.datenschutz-section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.datenschutz-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  position: relative;
+}
+
+.datenschutz-section ul li::marker {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* Contact Information Styling */
+.datenschutz-section a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.datenschutz-section a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+.datenschutz-section a[target="_blank"]::after {
+  content: ' ↗';
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Last Updated Styling */
+.last-updated {
+  background: linear-gradient(145deg, #fff3cd, #ffeaa7);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.last-updated::before {
+  content: '📅';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Section Numbering Enhancement */
+.datenschutz-section h2::before {
+  content: attr(data-number);
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .datenschutz-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .datenschutz-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .datenschutz-section p {
+    font-size: 0.95rem;
+  }
+  
+  .datenschutz-section ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .datenschutz-section {
+    padding: 1.2rem;
+  }
+  
+  .datenschutz-section h2 {
+    font-size: 1.1rem;
+  }
+  
+  .datenschutz-section p {
+    font-size: 0.9rem;
+  }
+  
+  .datenschutz-section ul li {
+    font-size: 0.9rem;
+  }
+  
+  .last-updated {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.datenschutz-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.datenschutz-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.datenschutz-section:nth-child(1) { animation-delay: 0.1s; }
+.datenschutz-section:nth-child(2) { animation-delay: 0.2s; }
+.datenschutz-section:nth-child(3) { animation-delay: 0.3s; }
+.datenschutz-section:nth-child(4) { animation-delay: 0.4s; }
+.datenschutz-section:nth-child(5) { animation-delay: 0.5s; }
+.datenschutz-section:nth-child(6) { animation-delay: 0.6s; }
+.datenschutz-section:nth-child(7) { animation-delay: 0.7s; }
+
+/* Focus States for Accessibility */
+.datenschutz-section a:focus {
+  outline: 2px solid #e74c3c;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Print Styles */
+@media print {
+  .hero {
+    background: white !important;
+    box-shadow: none !important;
+  }
+  
+  .datenschutz-section {
+    background: white !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+    margin-bottom: 1rem !important;
+  }
+  
+  .datenschutz-section::before {
+    display: none !important;
+  }
+  
+  .last-updated {
+    background: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    color: #495057 !important;
+  }
+  
+  .last-updated::before {
+    display: none !important;
+  }
+}
+
+/* Legal Content Enhancements */
+.datenschutz-section strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.datenschutz-section em {
+  color: #e74c3c;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Table of Contents Style (if needed) */
+.toc {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.toc h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc ul li {
+  margin-bottom: 0.5rem;
+}
+
+.toc ul li a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.toc ul li a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}

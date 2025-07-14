@@ -3,147 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Training – Karate-Do Neuhausen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Training | Karate-Do Neuhausen</title>
+  <link rel="stylesheet" href="components/styles/main.css">
+  <link rel="stylesheet" href="components/styles/pages/training.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-inner">
-      <span class="nav-logo"><a href="index.html" style="color:inherit;text-decoration:none;">Karate-Do Neuhausen</a></span>
-      <ul class="nav-links">
-        <li><a href="training.html">Training</a></li>
-        <li><a href="about.html">Über Uns</a></li>
-      </ul>
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo">Karate-Do Neuhausen</a>
+      </div>
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="training.html" class="nav-link">Training</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Über Uns</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-toggle" id="navbar-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
     </div>
   </nav>
-  <div class="container" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">Stark. Selbstbewusst. Konzentriert.</h1>
-    
-    <div class="training-content" style="max-width: 800px; width: 100%; text-align: left; margin: 2rem 0;">
-      <p style="font-size: 1.2rem; margin-bottom: 2rem;">Karate fördert genau das, was Ihr Kind im Leben braucht.</p>
+  
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">Stark. Selbstbewusst. Konzentriert.</h1>
+      <p class="hero-subtitle">Karate fördert genau das, was Ihr Kind im Leben braucht.</p>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container mt-3 mb-3">
+      <section class="benefits-section">
+        <p>Bei Karate-Do Neuhausen lernt Ihr Kind weit mehr als nur körperliche Fitness. Unser traditionelles Shotokan Karate-Training vermittelt:</p>
+        
+        <div class="benefits-grid">
+          <div class="grid grid-2">
+            <div>
+              <h3>Disziplin und Respekt</h3>
+              <p>im Dojo und im Alltag</p>
+            </div>
+            <div>
+              <h3>Selbstvertrauen</h3>
+              <p>auch für schüchterne Kinder</p>
+            </div>
+            <div>
+              <h3>Konzentration und Ausdauer</h3>
+              <p>für Schule und Leben</p>
+            </div>
+            <div>
+              <h3>Bewegung und Koordination</h3>
+              <p>kindgerecht und sicher</p>
+            </div>
+          </div>
+        </div>
+        
+        <p>Unsere erfahrenen Trainer begleiten jedes Kind individuell – egal ob Anfänger oder Fortgeschrittene. Das Training findet in einer sicheren, wertschätzenden Atmosphäre statt, in der Kinder wachsen dürfen.</p>
+        
+        <div class="text-center mt-3 mb-3">
+          <a href="https://wa.me/491791226471?text=Hallo%2C%20ich%20m%C3%B6chte%20mein%20Kind%20zum%20Probetraining%20anmelden." class="btn-black">Probetraining Vereinbaren</a>
+        </div>
+      </section>
       
-      <p style="margin-bottom: 2rem;">Bei Karate-Do Neuhausen lernt Ihr Kind weit mehr als nur körperliche Fitness. Unser traditionelles Shotokan Karate-Training vermittelt:</p>
-      
-      <div class="benefits" style="margin-bottom: 2rem;">
-        <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
-          <div style="padding: 1rem; border: 1px solid #000;">
-            <h3 style="margin: 0 0 0.5rem 0;">Disziplin und Respekt</h3>
-            <p style="margin: 0;">im Dojo und im Alltag</p>
-          </div>
-          <div style="padding: 1rem; border: 1px solid #000;">
-            <h3 style="margin: 0 0 0.5rem 0;">Selbstvertrauen</h3>
-            <p style="margin: 0;">auch für schüchterne Kinder</p>
-          </div>
-          <div style="padding: 1rem; border: 1px solid #000;">
-            <h3 style="margin: 0 0 0.5rem 0;">Konzentration und Ausdauer</h3>
-            <p style="margin: 0;">für Schule und Leben</p>
-          </div>
-          <div style="padding: 1rem; border: 1px solid #000;">
-            <h3 style="margin: 0 0 0.5rem 0;">Bewegung und Koordination</h3>
-            <p style="margin: 0;">kindgerecht und sicher</p>
+      <section class="schedule-section">
+        <h2>Trainingszeiten</h2>
+        <div class="schedule-grid">
+          <div class="grid grid-2">
+            <div>
+              <h3>Dienstag</h3>
+              <ul>
+                <li><strong>18:00 - 19:00 Uhr:</strong> Gruppe: Gürtel weiß / gelb</li>
+                <li><strong>19:00 - 20:00 Uhr:</strong> Gruppe: Gürtel gelb / orange / grün</li>
+                <li><strong>20:00 - 22:00 Uhr:</strong> Gruppe: Gürtel blau / braun / schwarz</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Donnerstag</h3>
+              <ul>
+                <li><strong>17:00 - 18:00 Uhr:</strong> Gruppe: Gürtel weiß / gelb</li>
+                <li><strong>18:00 - 19:00 Uhr:</strong> Gruppe: Gürtel gelb / orange / grün</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-
-      <p style="margin-bottom: 2rem;">Unsere erfahrenen Trainer begleiten jedes Kind individuell – egal ob Anfänger oder Fortgeschrittene.<br>
-      Das Training findet in einer sicheren, wertschätzenden Atmosphäre statt, in der Kinder wachsen dürfen.</p>
-
-      <div style="text-align: center; margin: 3rem 0;">
-        <a href="https://wa.me/491791226471?text=Hallo%2C%20ich%20möchte%20mein%20Kind%20zum%20Probetraining%20anmelden." 
-           class="btn btn-primary" 
-           style="display: inline-block; 
-                  padding: 1rem 2rem; 
-                  background-color: #000; 
-                  color: #fff; 
-                  text-decoration: none; 
-                  border-radius: 4px; 
-                  font-weight: bold;
-                  transition: opacity 0.3s ease;">
-          Probetraining Vereinbaren
-        </a>
-      </div>
+        
+        <div class="training-note">
+          <p><strong>Bitte beachten Sie:</strong> An Feiertagen und während der Schulferien findet kein Training statt.</p>
+        </div>
+      </section>
     </div>
-
-    <div class="training-schedule" style="margin: 2rem 0; text-align: left; max-width: 800px; width: 100%;">
-      <h2 style="text-align: center; margin-bottom: 2rem;">Trainingszeiten</h2>
-      
-      <div class="training-day" style="margin-bottom: 2rem; border: 1px solid #000; border-radius: 8px; overflow: hidden;">
-        <h3 style="background-color: #f8f9fa; margin: 0; padding: 1rem; border-bottom: 1px solid #000;">Dienstag</h3>
-        <div style="padding: 1rem;">
-          <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; border-bottom: 1px solid #000; padding: 1rem 0;">
-            <div style="font-weight: bold;">18:00 - 19:00 Uhr</div>
-            <div>Gruppe: Gürtel weiß / gelb</div>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; border-bottom: 1px solid #000; padding: 1rem 0;">
-            <div style="font-weight: bold;">19:00 - 20:00 Uhr</div>
-            <div>Gruppe: Gürtel gelb / orange / grün</div>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; padding: 1rem 0;">
-            <div style="font-weight: bold;">20:00 - 22:00 Uhr</div>
-            <div>Gruppe: Gürtel blau / braun / schwarz</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="training-day" style="margin-bottom: 2rem; border: 1px solid #000; border-radius: 8px; overflow: hidden;">
-        <h3 style="background-color: #f8f9fa; margin: 0; padding: 1rem; border-bottom: 1px solid #000;">Donnerstag</h3>
-        <div style="padding: 1rem;">
-          <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; border-bottom: 1px solid #000; padding: 1rem 0;">
-            <div style="font-weight: bold;">17:00 - 18:00 Uhr</div>
-            <div>Gruppe: Gürtel weiß / gelb</div>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; padding: 1rem 0;">
-            <div style="font-weight: bold;">18:00 - 19:00 Uhr</div>
-            <div>Gruppe: Gürtel gelb / orange / grün</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="training-note" style="margin-top: 2rem; padding: 1rem; background-color: #f8f9fa; border: 1px solid #000; border-radius: 8px;">
-        <p style="margin: 0;"><strong>Bitte beachten Sie:</strong> An Feiertagen und während der Schulferien findet kein Training statt.</p>
-      </div>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="container footer-flex">
-      <div class="footer-left">
-        <div class="footer-contact">
-          <h2>Kontakt</h2>
-          <p>Pero Lazic</p>
-          <p>Telefon: <a href="tel:+491791226471">+49 179 1226471</a></p>
-        </div>
-        <div class="footer-meta">
-          <a href="impressum.html" class="footer-link">Impressum</a>
-          <a href="datenschutz.html" class="footer-link">Datenschutz</a>
-        </div>
-      </div>
-      <div class="footer-center">
-        <div class="footer-location">
-          <h2>Ort</h2>
-          <p>Winthirplatz 6</p>
-          <p>80639 München</p>
-        </div>
-      </div>
-      <div class="footer-right">
-        <div class="footer-map">
-          <iframe src="https://www.google.com/maps?q=Winthirplatz+6,+80639+München&output=embed" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Cookie Consent Banner -->
-  <div id="cookie-banner" class="cookie-banner" style="display: none;">
-    <div class="cookie-content">
-      <p>Diese Website verwendet Cookies, um Ihnen das beste Nutzererlebnis zu bieten. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu.</p>
-      <div class="cookie-buttons">
-        <button id="accept-cookies" class="btn btn-primary">Akzeptieren</button>
-        <button id="reject-cookies" class="btn btn-secondary">Ablehnen</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="cookies.js"></script>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script>
+    fetch('components/footer/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      });
+  </script>
+  <script src="components/navbar/navbar.js"></script>
 </body>
 </html> 
